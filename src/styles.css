@@ -1,0 +1,70 @@
+
+.App {
+  text-align: center;
+  color:black;
+  background-color: #f0f1f3;
+margin-top:-20px;
+  height:110px;
+}
+
+.App-logo {
+  height: 10vmin;
+  pointer-events: none;
+margin-left:-20px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #f0f1f3;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+
+}
+.container {
+  padding: 8px;
+margin-top:200px;
+margin-left:500px;
+width:700px;
+height:500px;
+}
+table {
+  border-collapse: collapse;
+  border: 2px blue solid;
+  font: 12px sans-serif;
+}
+
+td {
+  border: 1px blue solid;
+  padding: 5px;
+}
+line {
+  border: 10px blue solid;
+  padding: 10px;
+  width:50px;
+}
+Repo, RepoTable{
+margin-top:200px;
+}
