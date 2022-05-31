@@ -1,16 +1,15 @@
-
 .App {
   text-align: center;
-  color:black;
-  background-color: #f0f1f3;
-margin-top:-20px;
-  height:110px;
+  color: white;
+  background-color: blue;
+  margin-top: -20px;
+  height: 110px;
 }
 
 .App-logo {
   height: 10vmin;
   pointer-events: none;
-margin-left:-20px;
+  margin-left: -20px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -41,14 +40,13 @@ margin-left:-20px;
   to {
     transform: rotate(360deg);
   }
-
 }
 .container {
   padding: 8px;
-margin-top:200px;
-margin-left:500px;
-width:700px;
-height:500px;
+  margin-top: 200px;
+  margin-left: 500px;
+  width: 700px;
+  height: 500px;
 }
 table {
   border-collapse: collapse;
@@ -63,8 +61,9 @@ td {
 line {
   border: 10px blue solid;
   padding: 10px;
-  width:50px;
+  width: 50px;
 }
-Repo, RepoTable{
-margin-top:200px;
+Repo,
+RepoTable {
+  margin-top: 200px;
 }

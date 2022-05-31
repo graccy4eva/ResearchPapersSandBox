@@ -6,28 +6,65 @@ import logo from "./logo.jpg";
 const columns = [
   { field: "Id", hide: true, identity: true },
   //{ field: "_id", hide: true },
-  { field: "Title", headerName: "Title", width: 300 },
-  { field: "User", headerName: "User", width: 300 },
-  { field: "Task", headerName: "Task", width: 300 },
-  { field: "Chart_Type", headerName: "Chart Type", width: 300 },
-  { field: "Interaction", headerName: "Interaction", width: 300 },
+  {
+    field: "Title",
+    headerName: "Title",
+    width: 300,
+    headerClassName: "blue"
+  },
+  { field: "User", headerName: "User", width: 300, headerClassName: "blue" },
+  { field: "Task", headerName: "Task", width: 300, headerClassName: "blue" },
+  {
+    field: "Chart_Type",
+    headerName: "Chart Type",
+    width: 300,
+    headerClassName: "blue"
+  },
+  {
+    field: "Interaction",
+    headerName: "Interaction",
+    width: 300,
+    headerClassName: "blue"
+  },
   {
     field: "Information_Granularity",
     headerName: "Information Granularity",
-    width: 600
+    width: 600,
+    headerClassName: "blue"
   },
-  { field: "Sensory_Modality", headerName: "Sensory Modality", width: 600 },
+  {
+    field: "Sensory_Modality",
+    headerName: "Sensory Modality",
+    width: 600,
+    headerClassName: "blue"
+  },
   {
     field: "Assistive_Technology",
     headerName: "Assistive Technology",
-    width: 600
+    width: 600,
+    headerClassName: "blue"
   },
-  { field: "Contribution_Type", headerName: "Contribution Type", width: 600 },
-  { field: "Perception_Channel", headerName: "Perception Channel", width: 600 },
-  { field: "Year", headerName: "Year", width: 300 },
-  { field: "Venue", headerName: "Venue", width: 300 },
-  { field: "Keywords", headerName: "Keywords", width: 400 },
-  { field: "DOI", headerName: "DOI", width: 600 }
+  {
+    field: "Contribution_Type",
+    headerName: "Contribution Type",
+    width: 600,
+    headerClassName: "blue"
+  },
+  {
+    field: "Perception_Channel",
+    headerName: "Perception Channel",
+    width: 600,
+    headerClassName: "blue"
+  },
+  { field: "Year", headerName: "Year", width: 300, headerClassName: "blue" },
+  { field: "Venue", headerName: "Venue", width: 300, headerClassName: "blue" },
+  {
+    field: "Keywords",
+    headerName: "Keywords",
+    width: 400,
+    headerClassName: "blue"
+  },
+  { field: "DOI", headerName: "DOI", width: 600, headerClassName: "blue" }
 ];
 
 App = () => {
@@ -60,6 +97,12 @@ App = () => {
         columns={columns}
         pageSize={12}
         getRowId={(row) => row.Id}
+        sx={{
+          "& .blue": {
+            color: "white",
+            backgroundColor: "blue"
+          }
+        }}
       />
     </div>
   );
